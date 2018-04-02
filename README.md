@@ -34,5 +34,9 @@ $ deactivate
 ```
 
 ```bash
-$ pip freeze --local > requirements.txt
+$ sudo pip install pipreqs
+$ pipreqs . --force
+# if failed, reinstall pyOpenSSL:
+#       sudo pip uninstall pyOpenSSL
+#       sudo pip install pyOpenSSL
 ```
